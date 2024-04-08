@@ -8,5 +8,12 @@ install_lazygit() {
     sudo install lazygit /usr/local/bin
 }
 
+set_alias() {
+    alias s=supervisorctl
+    alias be='bundle exec'
+    alias lg=lazygit
+}
+
 install_lazygit
+set_alias
 echo \033[32m SETUP COMPLETED \033[m
